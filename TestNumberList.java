@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class TestNumberList {
 
-	@Test
+	@Test //Testing Collect method takes instring and produce a list
 	public void collect() throws Exception{
 		NumberRangeSummarizer val = new NumberList();
 		Collection<Integer> testList = Arrays.asList(1,3,6,7,8,12,13,14,15,21,22,23,24,31);
@@ -19,7 +19,7 @@ public class TestNumberList {
 		
 	}
 	
-	@Test
+	@Test //Test summarizeCollection class
 	public void summarize() throws Exception {
 	
 		NumberRangeSummarizer val  = new NumberList();
@@ -30,8 +30,8 @@ public class TestNumberList {
 		assertEquals(compare, Result);
 		
 	}
-	
-	@Test
+	 
+	@Test //Test if sequential values are grouped
 	public void sequential() throws Exception{
 		NumberRangeSummarizer val  = new NumberList();
 		String input = "1,3,4,5,5,7,8,9,10,11";
@@ -42,7 +42,7 @@ public class TestNumberList {
 		
 	}
 	
-	@Test
+	@Test //Test for if there are duplicates
 	public void duplicate() throws Exception{
 		
 		NumberRangeSummarizer val  = new NumberList();
@@ -53,7 +53,7 @@ public class TestNumberList {
 		assertEquals(Result, compare);
 	}
 	
-	@Test
+	@Test //Test if the values are not in order will you still get correct results
 	public void order() throws Exception{
 		
 		NumberRangeSummarizer val  = new NumberList();
@@ -66,7 +66,7 @@ public class TestNumberList {
 	
 	}
 	
-	@Test
+	@Test //Test if you use negative numbers
 	public void negative() throws Exception{
 		
 		NumberRangeSummarizer val  = new NumberList();

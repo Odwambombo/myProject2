@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class TestNumberList {
 
-	@Test //Testing Collect method takes instring and produce a list
+	@Test //Testing Collect method takes in string and produce a list
 	public void collect() throws Exception{
 		NumberRangeSummarizer val = new NumberList();
 		Collection<Integer> testList = Arrays.asList(1,3,6,7,8,12,13,14,15,21,22,23,24,31);
